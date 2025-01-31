@@ -138,3 +138,22 @@ See #4 above.
 - **Multitasking**: Refers to the OS’s ability to run multiple tasks (processes) on a single processor by quickly switching between them. It gives the illusion of parallel execution.
 
 ---
+
+### 20.The difference between **multitasking** and **multithreading** lies in how tasks are managed and executed within a system:
+
+1. **Multitasking**:
+   - **Definition**: Multitasking is the ability of an operating system (OS) to execute multiple tasks or processes at the same time. This involves switching between different processes to give the illusion of simultaneous execution, even if the system only has one CPU core (in the case of a single-core system).
+   - **Granularity**: Multitasking works at the **process level**, where the OS manages multiple independent processes. Each process can have one or more threads.
+   - **Example**: Running a web browser while listening to music in a media player on your computer. The OS switches between the browser and media player, allocating CPU time to each.
+
+2. **Multithreading**:
+   - **Definition**: Multithreading is a specific technique used within a single process, where the process is divided into smaller, concurrent **threads**. Each thread represents a separate execution path within the process, allowing them to run independently but share the same resources.
+   - **Granularity**: Multithreading works at the **thread level**, allowing multiple threads within a single process to execute simultaneously (or interleave their execution) on multiple CPU cores or over time in the case of a single-core system.
+   - **Example**: A web browser that loads a webpage while simultaneously rendering images and playing a video. Each of these tasks could run on separate threads within the same process.
+
+### Key Differences:
+- **Scope**: Multitasking involves multiple **processes** (separate applications), while multithreading involves multiple **threads** within a single process.
+- **Resource Sharing**: In multithreading, threads share the same memory space and resources of the parent process, making it easier to share data between threads. In multitasking, processes have isolated memory spaces.
+- **Context Switching**: Multitasking requires the OS to switch between different processes, while multithreading involves switching between threads within the same process.
+  
+In summary, multitasking is about running multiple processes, and multithreading is about running multiple threads within a single process. Both enable concurrent execution but operate at different levels of granularity.
