@@ -90,7 +90,6 @@ The booting process is initiated when you power on or restart your computer or d
 
 Once all of that is complete, you’re presented with a login screen (if required) or a ready desktop environment, and the system is ready for use.
 
-Does this help, or were you looking for more technical details on any of the steps?
 ---
 
 ### 11. **Routing process troubleshooting: What steps will you take when your system is not booting up properly?**
