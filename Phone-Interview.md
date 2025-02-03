@@ -48,6 +48,9 @@ Processing speed refers to how quickly a CPU can execute instructions. It’s of
 ### 7. **What is a zombie process and orphan process?**
 - **Zombie process**: A process that has completed execution but still has an entry in the process table. It occurs because the parent process hasn’t read its exit status yet.
 - **Orphan process**: A process whose parent has finished or terminated, leaving it without a parent. In UNIX-like systems, the init process (PID 1) adopts orphan processes.
+- 
+- A zombie process is finished but still in the process table because its parent hasn’t read its exit status.
+- An orphan process is one whose parent has ended, and it's adopted by the system’s init process.
 
 ---
 
