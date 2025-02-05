@@ -180,7 +180,7 @@ In summary, multitasking is about running multiple processes, and multithreading
 
 ---
 
-### Tools for Routing Troubleshooting:
+### 21.Tools for Routing Troubleshooting:
 - **ip command**: For viewing and modifying routing tables.
 - **traceroute**: To see the path packets take to reach a destination.
 - **ping**: To check basic connectivity to a host or gateway.
