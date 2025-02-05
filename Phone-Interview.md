@@ -92,7 +92,7 @@ Once all of that is complete, you’re presented with a login screen (if require
 
 ---
 
-### 11. **Routing process troubleshooting: What steps will you take when your system is not booting up properly?**
+### 11. **What steps will you take when your system is not booting up properly?**
 - **Check hardware connections** (e.g., cables, power supply).
 - **Check boot logs**: Use boot logs like `/var/log/boot.log` or `dmesg` for errors.
 - **Check the bootloader configuration**: Ensure the bootloader (e.g., GRUB) is configured correctly.
@@ -177,3 +177,12 @@ See #4 above.
 - **Context Switching**: Multitasking requires the OS to switch between different processes, while multithreading involves switching between threads within the same process.
   
 In summary, multitasking is about running multiple processes, and multithreading is about running multiple threads within a single process. Both enable concurrent execution but operate at different levels of granularity.
+
+### Tools for Routing Troubleshooting:
+**ip command**: For viewing and modifying routing tables.
+**traceroute**: To see the path packets take to reach a destination.
+**ping**: To check basic connectivity to a host or gateway.
+**netstat**: To check network statistics and routing information.
+**ifconfig or ip link**: To check interface statuses and configurations.
+**ss**: To check network sockets and open connections.
+**systemctl**: To check the status of routing daemons and services.
