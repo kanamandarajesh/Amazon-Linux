@@ -178,11 +178,13 @@ See #4 above.
   
 In summary, multitasking is about running multiple processes, and multithreading is about running multiple threads within a single process. Both enable concurrent execution but operate at different levels of granularity.
 
+---
+
 ### Tools for Routing Troubleshooting:
-**ip command**: For viewing and modifying routing tables.
-**traceroute**: To see the path packets take to reach a destination.
-**ping**: To check basic connectivity to a host or gateway.
-**netstat**: To check network statistics and routing information.
-**ifconfig or ip link**: To check interface statuses and configurations.
-**ss**: To check network sockets and open connections.
-**systemctl**: To check the status of routing daemons and services.
+- **ip command**: For viewing and modifying routing tables.
+- **traceroute**: To see the path packets take to reach a destination.
+- **ping**: To check basic connectivity to a host or gateway.
+- **netstat**: To check network statistics and routing information.
+- **ifconfig or ip link**: To check interface statuses and configurations.
+- **ss**: To check network sockets and open connections.
+- **systemctl**: To check the status of routing daemons and services.
